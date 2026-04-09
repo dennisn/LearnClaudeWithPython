@@ -34,3 +34,14 @@ Please create 3 alternative designs with its pros & cons"
 
 "First, please write the original design plans to "docs/001/01_InitialPlan.md", and the implementation plans to "docs/001/02_ImplementationPlan.md""
 ```
+
+## Initial scaffold
+
+```shell
+
+# with a fresh session/terminal
+"implement the implementation plan at "docs/001/02_ImplementationPlan.md""
+
+# create the initial "CLAUDE.md"
+/init
+```
