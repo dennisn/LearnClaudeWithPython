@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Solutions</h1>
+
+{% for difficulty in ["easy", "medium", "hard"] %}
+  <details open>
+    <summary><strong>{{ difficulty | capitalize }}</strong></summary>
+    {% if registry[difficulty] %}
+      <ul>
+        {% for entry in registry[difficulty] %}
+          <li><a href="/solution/{{ entry.id }}">{{ entry.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p><em>No solutions yet.</em></p>
+    {% endif %}
+  </details>
+{% endfor %}
+{% endblock %}

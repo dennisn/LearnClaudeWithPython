@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ module.TITLE }}</h1>
+<p>{{ module.DESCRIPTION }}</p>
+
+<form method="POST">
+  {% for param in module.PARAMS %}
+    <label for="{{ param.name }}">
+      {{ param.name }}
+      <input
+        type="text"
+        id="{{ param.name }}"
+        name="{{ param.name }}"
+        placeholder="{{ param.description }}"
+        value="{{ request.form.get(param.name, '') }}"
+      />
+    </label>
+  {% endfor %}
+  <button type="submit">Run</button>
+</form>
+
+{% if result is not none %}
+  <article>
+    <header>Result</header>
+    <pre>{{ result }}</pre>
+  </article>
+{% endif %}
+
+{% if error is not none %}
+  <article>
+    <header>Error</header>
+    <mark>{{ error }}</mark>
+  </article>
+{% endif %}
+
+<p><a href="/">← Back to solutions</a></p>
+{% endblock %}
