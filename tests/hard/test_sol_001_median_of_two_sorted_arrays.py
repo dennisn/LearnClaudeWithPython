@@ -19,6 +19,9 @@ def test_all_zeros():
 def test_one_empty():
     assert solve([], [1]) == 1.0
 
+def test_both_empty():
+    with pytest.raises(ValueError):
+        solve([], [])
 
 def test_large_skew():
     # Merged: [1, 2, 3, 4, 5, 6] → median = (3+4)/2 = 3.5
