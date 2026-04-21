@@ -45,3 +45,15 @@ Please create 3 alternative designs with its pros & cons"
 # create the initial "CLAUDE.md"
 /init
 ```
+
+## Adding unittest & changing the name
+
+- Update CLAUDE.md to add mandatory git branch creation
+
+```shell
+
+"In current project, I want to add unittest for solution 001_two_sum.py"
+
+"Current design means solution name starting with a digit, which is invalid python identifier name. Please change it so the name starts with known prefix instead,
+for example "sol_001_two_sum.py" instead of "001_two_sum.py""
+```

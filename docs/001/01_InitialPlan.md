@@ -23,8 +23,8 @@ Build a Python web application (minimal CSS) to showcase personal LeetCode solut
 ```text
 app.py
 solutions/
-  easy/001_two_sum.py
-  medium/002_add_two_numbers.py
+  easy/sol_001_two_sum.py
+  medium/sol_002_add_two_numbers.py
   hard/
 templates/
   base.html
@@ -66,7 +66,7 @@ requirements.txt
 ```text
 app.py
 solutions/
-  easy/001_two_sum.py
+  easy/sol_001_two_sum.py
   ...
 templates/
   base.html
@@ -109,7 +109,7 @@ requirements.txt
 ```text
 main.py
 solutions/
-  easy/001_two_sum.py
+  easy/sol_001_two_sum.py
   ...
 templates/
   base.html

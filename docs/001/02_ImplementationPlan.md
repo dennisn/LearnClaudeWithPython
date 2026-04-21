@@ -15,7 +15,7 @@ app.py                        ← Flask app, routes, solution loader
 requirements.txt
 solutions/
   easy/
-    001_two_sum.py
+    sol_001_two_sum.py
   medium/
   hard/
 templates/
@@ -77,7 +77,7 @@ At startup, scan `solutions/` and build an in-memory registry:
 ```python
 # Pseudocode — implemented in app.py
 registry = {
-    "easy":   [{"id": "001_two_sum", "title": "Two Sum", "module": <module>}, ...],
+    "easy":   [{"id": "sol_001_two_sum", "title": "Two Sum", "module": <module>}, ...],
     "medium": [...],
     "hard":   [...],
 }
@@ -172,7 +172,7 @@ if __name__ == "__main__":
 
 1. `pip install -r requirements.txt && python app.py` — server starts with no errors
 2. `GET /` — tree shows Easy / Medium / Hard groups; each group is collapsible
-3. Click "Two Sum" → `GET /solution/001_two_sum` — form shows `nums` and `target` inputs
+3. Click "Two Sum" → `GET /solution/sol_001_two_sum` — form shows `nums` and `target` inputs
 4. Enter `[2,7,11,15]` and `9` → click Run → result shows `[0, 1]`
 5. Enter `notvalid` for `nums` → result shows a clear error message (no 500)
 6. Add `solutions/easy/002_valid_parentheses.py` → restart → appears in tree
@@ -183,7 +183,7 @@ if __name__ == "__main__":
 ## Implementation Order
 
 1. `requirements.txt`
-2. `solutions/easy/001_two_sum.py` (sample solution to test with)
+2. `solutions/easy/sol_001_two_sum.py` (sample solution to test with)
 3. `app.py` — loader + all routes
 4. `templates/base.html`
 5. `templates/index.html`
