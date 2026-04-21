@@ -5,10 +5,10 @@
 The project is a Flask app that lets users run LeetCode solutions in a browser. Solutions live in `solutions/<difficulty>/`, must export `TITLE`, `PARAMS`, and `solve()`, and are auto-discovered at startup. The app only supports `list[int]` as the closest type to a linked list, so inputs/outputs will be represented as digit arrays in reverse order (e.g. `[2,4,3]` = 342). The `solve()` function will handle the internal linked list construction transparently.
 
 Current state on `main`:
-- `solutions/easy/001_two_sum.py` exists (no `sol_` prefix — predates the naming convention)
-- `solutions/medium/` does not exist
-- `tests/medium/` does not exist
-- `tests/__init__.py` and `tests/easy/__init__.py` exist only as `.pyc` bytecache (not as source files)
+- `solutions/easy/sol_001_two_sum.py` exists
+- `tests/__init__.py` and `tests/easy/__init__.py` both exist as source files
+- This PR adds `solutions/medium/`
+- This PR adds `tests/medium/`
 
 ---
 
