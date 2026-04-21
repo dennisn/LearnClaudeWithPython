@@ -35,7 +35,7 @@ Please create 3 alternative designs with its pros & cons"
 "First, please write the original design plans to "docs/001/01_InitialPlan.md", and the implementation plans to "docs/001/02_ImplementationPlan.md""
 ```
 
-## Initial scaffold
+## 001. Initial scaffold
 
 ```shell
 
@@ -46,7 +46,7 @@ Please create 3 alternative designs with its pros & cons"
 /init
 ```
 
-## Adding unittest & changing the name
+## 002. Adding unittest & changing the name
 
 - Update CLAUDE.md to add mandatory git branch creation
 
@@ -56,4 +56,17 @@ Please create 3 alternative designs with its pros & cons"
 
 "Current design means solution name starting with a digit, which is invalid python identifier name. Please change it so the name starts with known prefix instead,
 for example "sol_001_two_sum.py" instead of "001_two_sum.py""
+```
+
+## 003. Adding solution for "Add Two Numbers"
+
+```shell
+I want to add the "Add Two Numbers" solution, with unittest. This is a medium difficulty problem, described at https://leetcode.com/problems/add-two-numbers/description/
+```
+
+## 004. Adding solution for "Median of Two Sorted Arrays"
+
+```shell
+I want to add the "Median of Two Sorted Arrays" solution, with unittest. This is a hard difficulty problem, with following specs: "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.". 
+Do not implement the solution, but create the framework for me to solve it
 ```
