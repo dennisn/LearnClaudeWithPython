@@ -20,7 +20,7 @@ At startup, `app.py` scans `solutions/<difficulty>/*.py` and builds two data str
 - **`registry`** — `dict[difficulty → list[{id, title, module}]]` used by the index page to render the tree
 - **`lookup`** — `dict[id → module]` used by the solution route for O(1) access
 
-Solutions are loaded via `importlib.util.spec_from_file_location`. Files missing `TITLE`, `PARAMS`, or `solve` are silently skipped. Sorted by filename, so numeric prefixes (`001_`, `002_`) control display order.
+Solutions are loaded via `importlib.util.spec_from_file_location`. Files missing `TITLE`, `PARAMS`, or `solve` are silently skipped. Sorted by filename, so `sol_`-prefixed names (`sol_001_`, `sol_002_`) control display order.
 
 ### Adding a Solution
 
@@ -55,3 +55,10 @@ All templates extend `templates/base.html`, which loads Pico.css from CDN (class
 ## Project Docs
 
 Design alternatives and implementation rationale are in `docs/001/`. The `learning/` directory documents the Claude Code workflow used to build this project.
+
+## Git Workflow Rules
+
+- ALWAYS create a new feature branch before making any file modifications
+- Use the naming convention `feature/[yyyyMMdd]_[DescriptionInCamelCase]`
+- Check out the branch immediately after creation.
+- Once implementation finished, create pull-request for review & merge.

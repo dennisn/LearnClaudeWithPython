@@ -24,7 +24,7 @@ The project is a blank slate — no existing code, no framework, no solutions ye
 app.py
 solutions/
   easy/
-    001_two_sum.py
+    sol_001_two_sum.py
     ...
   medium/
     ...
