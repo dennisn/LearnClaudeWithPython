@@ -15,9 +15,9 @@ Current state on `main`:
 ## Files to Create
 
 ### 1. `solutions/medium/__init__.py` — empty
-Required so `from solutions.medium.sol_002_add_two_numbers import solve` works in tests.
+Required so `from solutions.medium.sol_001_add_two_numbers import solve` works in tests.
 
-### 2. `solutions/medium/sol_002_add_two_numbers.py`
+### 2. `solutions/medium/sol_001_add_two_numbers.py`
 
 ```python
 TITLE = "Add Two Numbers"
@@ -77,10 +77,10 @@ Recreates the missing source file (only `.pyc` exists on `main`).
 
 ### 4. `tests/medium/__init__.py` — empty
 
-### 5. `tests/medium/test_sol_002_add_two_numbers.py`
+### 5. `tests/medium/test_sol_001_add_two_numbers.py`
 
 ```python
-from solutions.medium.sol_002_add_two_numbers import solve
+from solutions.medium.sol_001_add_two_numbers import solve
 
 
 def test_basic_example():
